@@ -30,13 +30,13 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#inicio">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#about">Acerca de Mi</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#portafolios">Portafolios</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
@@ -46,7 +46,7 @@
     </header>
     <main  class="container mt-5 pt-5">
         <section id="inicio">
-            <div class="container">
+            <div class="">
                 <h1 class="display-4">Hola, Soy Harvin Zúniga!</h1>
                 <br>
                 <div>
@@ -54,12 +54,26 @@
                 <i class="fas fa-angle-double-down fadown"></i>
             </div>
         </section>
-        <section id="about">
+        <section id="about" class="my-2 mx-2">
             <h2 class="display-4">Acerca de Mi</h2>
             <br>
-            <p>Hola, soy Harvin!</p>
-            <br>
-            <p>Soy Ingeniero en Sistemas, amante de las tecnología, películas y la música. Recientemente llegué a España e incursioné en el mundo del Desarrollo Front-End. Adicional a esto cuento con experiencia en Servidores Windows y VMWare, Bases de Datos SQL y Visual Basic.Net</p>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <img src="./img/hz.jpg" alt="Foto Harvin" class="hz-image">
+                </div>
+                <div class="col-md-6">
+                    <p>Hola, soy Harvin!</p>
+                    <br>
+                    <p>Soy Ingeniero en Sistemas, amante de las tecnología, películas y la música. Recientemente llegué a España e incursioné en el mundo del Desarrollo Front-End. Adicional a esto cuento con experiencia en Servidores Windows y VMWare, Bases de Datos SQL y Visual Basic.Net</p>
+                    <br>
+                    <div class="social-contact">
+                        <a class="mx-2" href="https://twitter.com/FrankMartin1_"><img  class="social-img" src="./img/gorjeo.svg" alt=""></a>
+                        <a class="mx-2" href="https://github.com/hfzespinoz4"><img  class="social-img" src="./img/github.svg" alt=""></a>
+                        <a class="mx-2" href="https://www.linkedin.com/in/hzunigae/"><img  class="social-img" src="./img/linkedin.svg" alt=""></a>
+                        <a class="mx-2" href="#contacto"><img class="social-img" src="./img/gmail.svg" alt=""></a>                        
+                    </div>
+                </div>
+            </div>           
         </section>
         <section id="portafolios">
             <h2 class="display-4">Portafolios</h2>
@@ -69,26 +83,29 @@
             <div class="my-2 mx-2"> 
                 <label for="name">Nombre Completo:</label>
                 <input class="form-control" type="text" id="name">
+                <p id="error-name"></p>
             </div>
-            <div class="mb-2 mx-2"> 
+            <div class="mb-3 mx-2"> 
                 <label for="email">Email:</label>
                 <input class="form-control" type="email" id="email">
+                <p id="error-email"></p>
             </div>
-            <div class="mb-2 mx-2"> 
+            <div class="mb-3 mx-2"> 
                 <label for="phone">Teléfono:</label>
                 <input class="form-control" type="phone" id="phone">
+                <p id="error-phone"></p>
             </div>
-            <div class="mb-2 mx-2"> 
+            <div class="mb-3 mx-2"> 
                 <label for="subject">Asunto:</label>
                 <input class="form-control" type="text" id="subject">
+                <p id="error-subject"></p>
             </div>
-            <div class="mb-2 mx-2"> 
+            <div class="mb-3 mx-2"> 
                 <label for="message">Mensaje:</label>
                 <textarea class="form-control" type="text" id="message"></textarea>
+                <p id="error-message"></p>
             </div>
             <button class="btn btn-info mb-2 mx-2">Enviar Mensaje</button>
-
-
         </section>
     </main>
     <footer>
