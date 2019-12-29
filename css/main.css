@@ -5,4 +5,43 @@ body{
 
 p{
     text-align: center;
+    font-size: 12px;
 }
+
+ul{
+    list-style-type: none;
+}
+
+
+@media screen and (max-width: 375px) {
+    .display-4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .fadown{
+        height: 10rem;
+        width: 10rem;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1680px) {
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 2560px) {
+}
+
