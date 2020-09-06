@@ -1,0 +1,23 @@
+body{
+    height: 95vh;
+    width: 100%;
+}
+
+.main-social{
+    color: gray;
+    height: 1rem;
+    width: 1rem;
+}
+
+.profile-image{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.about{
+    line-height: 100%;
+}
+
+h1{
+    font-size: 1rem;
+}
